@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101010">
+
+    <meta name="description"
+        content="Mohd Aasim — ENTC student at VJTI Mumbai, interested in embedded systems, firmware, electronics, Linux kernel development and open source.">
+
+    <title>Mohd Aasim | Embedded Systems & Electronics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+
+        <a href="#home" class="logo">MA.</a>
+
+        <nav class="navigation" id="navigation">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#opensource">Open Source</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navigation">
+            ☰
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    ENTC STUDENT · VJTI MUMBAI
+                </p>
+
+                <h1>Mohd Aasim<span>.</span></h1>
+
+                <h2>Embedded Systems & Electronics</h2>
+
+                <p class="hero-description">
+                    Interested in embedded systems, low-level software,
+                    hardware design, firmware development and
+                    open-source contributions.
+                </p>
+
+                <div class="hero-links">
+
+                    <a href="#projects" class="primary-link">
+                        View my projects ↗
+                    </a>
+
+                    <a href="https://github.com/Mohdaasim18"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PERSONAL PHOTO -->
+            <div class="profile-container">
+
+                <img
+                    src="images/aasim.jpeg"
+                    alt="Mohd Aasim"
+                    class="profile-image"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('photo-missing');"
+                >
+
+                <span class="photo-placeholder">
+                    YOUR PHOTO
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="section" id="about">
+
+            <p class="section-label">01 / ABOUT</p>
+
+            <h2>A little about me.</h2>
+
+            <div class="about-content">
+
+                <p>
+                    I'm an Electronics and Telecommunication Engineering
+                    student at Veermata Jijabai Technological Institute,
+                    Mumbai.
+                </p>
+
+                <p>
+                    I enjoy working close to the hardware — developing
+                    embedded firmware, working with microcontrollers,
+                    designing PCBs and debugging real-world systems.
+                    I'm also interested in Linux kernel development
+                    and contributing to open-source projects.
+                </p>
+
+            </div>
+
+            <div class="skills">
+                <span>Embedded C</span>
+                <span>C / C++</span>
+                <span>RP2040</span>
+                <span>ESP32</span>
+                <span>Linux</span>
+                <span>KiCad</span>
+                <span>Git</span>
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+
+            <p class="section-label">02 / PROJECTS</p>
+
+            <h2>Projects.</h2>
+
+            <article class="project rp2040-project">
+
+                <div class="project-top">
+                    <span>01</span>
+                    <span>HARDWARE / FIRMWARE</span>
+                </div>
+
+                <h3>PicoLink — RP2040</h3>
+
+                <p class="project-intro">
+                    An RP2040-based VGA graphics system developed
+                    using the Raspberry Pi Pico SDK. The project
+                    explores real-time display generation,
+                    programmable I/O, memory management and
+                    custom hardware development.
+                </p>
+
+
+                <!-- VGA OUTPUT IMAGE -->
+                <figure class="project-image">
+
+                    <img
+                        src="images/picolink-vga.jpg"
+                        alt="Pac-Man running through VGA output generated by RP2040 using a custom PCB"
+                    >
+
+                    <figcaption>
+                        Pac-Man running on VGA · RP2040 custom PCB
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- TECHNICAL DETAILS -->
+                <div class="project-details">
+
+                    <div class="detail-item">
+
+                        <h4>VGA Signal Generation</h4>
+
+                        <p>
+                            Implemented VGA output using RP2040 PIO
+                            state machines. Worked with horizontal
+                            and vertical synchronization, RGB signal
+                            generation and VGA pin configuration.
+                        </p>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <h4>PIO & DMA</h4>
+
+                        <p>
+                            Used Programmable I/O for timing-sensitive
+                            display operations and DMA for transferring
+                            display data with reduced CPU involvement.
+                        </p>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <h4>Framebuffer & Memory</h4>
+
+                        <p>
+                            Worked on framebuffer-based graphics,
+                            pixel representation and colour encoding.
+                            Explored memory constraints while handling
+                            display resolution and colour depth.
+                        </p>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <h4>Custom PCB Development</h4>
+
+                        <p>
+                            Worked on custom RP2040 hardware involving
+                            VGA connectivity, USB interfaces, component
+                            integration, soldering and board-level debugging.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TECHNOLOGIES -->
+                <div class="project-tech">
+
+                    <span>RP2040</span>
+                    <span>Raspberry Pi Pico SDK</span>
+                    <span>Embedded C / C++</span>
+                    <span>PIO</span>
+                    <span>DMA</span>
+                    <span>TinyUSB</span>
+                    <span>KiCad</span>
+
+                </div>
+
+
+                <!-- DIRECT PROJECT REPOSITORY -->
+                <a class="project-link"
+                    href="https://github.com/ashmita0307/PicoLink"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <span>View PicoLink repository</span>
+                    <span>↗</span>
+
+                </a>
+
+            </article>
+
+        </section>
+
+
+        <!-- OPEN SOURCE -->
+        <section class="section" id="opensource">
+
+            <p class="section-label">03 / OPEN SOURCE</p>
+
+            <h2>Exploring open source.</h2>
+
+            <p class="section-description">
+                I'm currently exploring Linux kernel development
+                and working on a sensor driver for the Linux
+                Industrial I/O (IIO) subsystem. This involves
+                understanding kernel internals, sensor
+                communication, driver architecture and
+                hardware-software interaction.
+            </p>
+
+            <div class="opensource-focus">
+
+                <p class="focus-label">CURRENTLY EXPLORING</p>
+
+                <h3>Linux Kernel Sensor Driver</h3>
+
+                <p>
+                    Linux IIO Subsystem · Device Drivers · I2C ·
+                    Kernel Development
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTERESTS -->
+        <section class="section" id="interests">
+
+            <p class="section-label">04 / INTERESTS</p>
+
+            <h2>Areas I'm exploring.</h2>
+
+            <div class="interest-list">
+
+                <p>Embedded Systems & Firmware</p>
+
+                <p>Linux Kernel & Device Drivers</p>
+
+                <p>Zephyr RTOS</p>
+
+                <p>PCB Design & Electronics</p>
+
+                <p>Robotics & Control Systems</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="section contact" id="contact">
+
+            <p class="section-label">05 / CONTACT</p>
+
+            <h2>Let's connect.</h2>
+
+            <p>
+                Interested in embedded systems, electronics,
+                open source or working on something interesting?
+                Feel free to reach out.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="https://github.com/Mohdaasim18"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub ↗
+                </a>
+
+                <a href="mailto:mohdasimmmmm@gmail.com">
+                    Email ↗
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <span>© 2026 Mohd Aasim</span>
+
+        <a href="#home">Back to top ↑</a>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
